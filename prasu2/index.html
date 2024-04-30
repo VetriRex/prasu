@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>prasanna</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #A100C9;
+            background: linear-gradient(135deg, #A100C9, #7600BC);
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slacn-c {
+            background-color: rgba(161, 0, 201, 0.6); /* Same color as background, but transparent */
+            width: 80%;
+            padding: 20px; /* Adjust padding as needed */
+            text-align: center; /* Center text horizontally */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow */
+        }
+
+        @keyframes shine {
+            from {
+                background-position: center 0;
+            }
+            to {
+                background-position: center 200%;
+            }
+        }
+
+        h3 {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+            background: url(back3.jpg); /* Check image path */
+            background-size: auto 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+        }
+        h4 {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+            background: url(11_pattern.jpg); /* Check image path */
+            background-size: auto 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 8s linear infinite;
+        }
+
+        span {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+            margin-top: 20px;
+            color: #fff;
+            display: block; /* Display spans as block elements */
+            margin-bottom: 10px; /* Add some margin between spans */
+            
+        }
+        button, a{
+            margin-top: 20px;
+            border: 0;
+            margin-left: 50%;
+            cursor: pointer;
+            background-color: #272727;
+            color: #fff;
+            padding: 14px 20px;
+            font-size: 12px;
+            font-weight: 200;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;
+        }
+        .pmc-ac span{
+            font-size: 30px;
+        }
+        .first-div{
+            display: block;
+        }
+        .second-div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="slacn-c">
+        <div class="first-div">
+            <h3>sorry</h3>
+        
+                <span>i'm sorry if anything I said hurt you,</span>
+                <span>i dont know how to calm you,</span>
+                <span>from now I won't speak like that,</span>
+                <span>Plz forget that thing prasanna,</span>
+                <span>Plz speak with me & dont ignore me,</span>
+                <span>And dont talk like i'm a stranger,</span>
+                <span>If you forgive me click that below button</span>
+                <button id="forgive">forgive me &#129402;</button>
+        </div>
+        <div class="second-div">
+            <span style="font-size: 70px; margin-top: -20px;" >&#129392;</span>
+            <h4>Nice</h4>
+            <span>i swear i never repeat that thing</span>
+            <span>come on let's talk normally</span>
+            <div class="pmc-ac">
+            <span>&#129505;</span>
+            <span>&#129680;</span>
+            <span>&#128151;</span>
+            </div>
+            <a href="https://www.instagram.com/direct/t/k_v_e_t_r_i_93">Chat with me</a>
+        </div>
+    </div>
+    <script>
+       document.getElementById('forgive').addEventListener('click', function() {
+    console.log("Button clicked"); // Add this line
+    document.querySelector('.first-div').style.display = 'none';
+    document.querySelector('.second-div').style.display = 'block';
+});
+    </script>
+</body>
+</html>
